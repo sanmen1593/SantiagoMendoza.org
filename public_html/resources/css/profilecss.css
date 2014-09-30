@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/09/2014, 08:08:12 AM
+    Author     : Santiago
+*/
+.nav-bar{
+    margin-bottom: 0;
+}
+#header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#profile{
+    background-image: url('../images/blog-de-santiago-mendoza.jpg');
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+    background-position: center;
+    text-align: center;
+    color:  white;
+}
+
+#profile-picture{
+    border-radius: 50%;
+}
+
