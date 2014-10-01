@@ -41,16 +41,42 @@
                 </div><!-- /.container-fluid -->
             </nav>
             <div id="profile" class="jumbotron">
-                <img id="profile-picture" src="resources/images/profile-picture.jpg" alt="Santiago Mendoza Ramirez"
-                     title="Santiago Mendoza Ramirez">
-                <h1 id="name">Santiago Mendoza Ramirez</h1>
-                <p id="description">Estudiante de Ingeniería de Sistemas en la Universidad
-                    Tecnológica de Bolívar. Estratega Digital. Backend y Frontend Developer.
-                    Una vida guiada, controlada y dirigida por los propósitos de Dios.
-                </p>
+                <div class="row">
+                    <img id="profile-picture" src="resources/images/profile-picture.jpg" alt="Santiago Mendoza Ramirez"
+                         title="Santiago Mendoza Ramirez">
+                </div>
+                <div class="row">
+                    <h1 id="profile-name">Santiago Mendoza Ramirez</h1>
+                </div>
+                <div class="row">
+                    <p id="description">Estudiante de Ingeniería de Sistemas en la Universidad
+                        Tecnológica de Bolívar. Estratega Digital. Backend y Frontend Developer.
+                        Una vida guiada, controlada y dirigida por los propósitos de Dios.
+                    </p>
+                </div>
+                <div id="social-media" class="row">
+                    <a class="social-icons" href="http://www.facebook.com/SantiagoMendozaOficial">
+                        <img src="resources/images/facebook.png" alt="Facebook" class="social-icons" title="Facebook">
+                    </a>
+                    <a class="social-icons" href="http://www.twitter.com/sanmen1593">
+                        <img src="resources/images/twitter.png" alt="Twitter" class="social-icons" title="Twitter">
+                    </a>
+                    <a class="social-icons" href="http://www.github.com/sanmen1593">
+                        <img src="resources/images/github.png" alt="Github" class="social-icons" title="Github">
+                    </a>
+                    <a class="social-icons" href="http://www.instagram.com/sanmen1593">
+                        <img src="resources/images/instagram.png" alt="Instagram" class="social-icons" title="Instagram">
+                    </a>
+                    <a class="social-icons" href="https://plus.google.com/+SantiagoMendozaRamirez">
+                        <img src="resources/images/googleplus.png" alt="Google Plus" class="social-icons" title="Google Plus">
+                    </a>
+                    <a class="social-icons" href="https://www.linkedin.com/profile/view?id=179198877">
+                        <img src="resources/images/linkedin.png" alt="LinkedIn" class="social-icons" title="LinkedIn">
+                    </a>
+                </div>
             </div>
         </header>
-        <section id="body" class="container">
+        <section id="thumbnails" class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
@@ -72,9 +98,10 @@
                         <img src="resources/images/blog-de-santiago-mendoza.jpg" alt="Blog de Santiago Mendoza">
                         <div class="caption">
                             <h3>Hoja de Vida</h3>
-                            <p style="text-align: justify;">Blog personal, donde abordo temas sobre ingeniería de sistemas,
-                                desarrollo de software, marketing digital, productividad, reflexiones cristianas
-                                y demás.</p>
+                            <p style="text-align: justify;">
+                                Encuentra mi perfil profesional, educación y experiencia. Conoce mis aptitudes,
+                                conocimientos, certificados y certificaciones.
+                            </p>
                             <p>
                                 <a href="http://www.santiagomendoza.org/blog" class="btn btn-primary" role="button">Ir al Blog</a>
                                 <a href="#" class="btn btn-default" role="button">Button</a>
@@ -86,7 +113,7 @@
                     <div class="thumbnail">
                         <img src="resources/images/blog-de-santiago-mendoza.jpg" alt="Blog de Santiago Mendoza">
                         <div class="caption">
-                            <h3>Blog</h3>
+                            <h3>Portafolio</h3>
                             <p style="text-align: justify;">Blog personal, donde abordo temas sobre ingeniería de sistemas,
                                 desarrollo de software, marketing digital, productividad, reflexiones cristianas
                                 y demás.</p>
@@ -99,7 +126,38 @@
                 </div>
             </div>            
         </section>
+        <section id="contact-form" class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+                    <div class="panel panel-default">
+                        <div id="panel-body" class="panel-body">
+                            <h3>¡Contactame!</h3>
+                            <form id="form-contact" class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="name">Nombre: </label>
+                                    <input type="text" class="form-control" name="name" id="name" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input type="email" class="form-control" name="email" id="email" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Mensaje: </label>
+                                    <textarea name="message" class="form-control" id="message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" class="btn btn-primary" title="Enviar"/>
+                                    <input type="reset" name="submit" class="btn btn-danger" title="Cancelar"/>                            
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
 
+        </footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="resources/js/jquery.min.js"></script>
