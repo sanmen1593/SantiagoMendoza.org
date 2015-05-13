@@ -1,25 +1,198 @@
+/* Shared CSS */
+
 body{
 	margin: 0;
 	padding: 0;
 }
 
+
+
+/* Modules */
+
 .navbar{
-	background-color: grey;
+	background-color: #f7f7f7;
 	width: 100%;
+	height: 100px;
 	margin: 0;
 }
 
 	.navbar__menu{
 		margin: 0;
+		padding-top: 30px;
 		list-style: none;
 		display: flex;
-		justify-content: flex-end;
-		align-items: flex-end;
+		align-items: space-between;
 	}
+
+		.navbar__menu > li{
+			margin: 0 20px 0 0;
+		}
+
+		.navbar__menu > li a{
+			text-decoration: none;
+			color: #484545;
+		}
+
+		.navbar__menu > li a:hover{
+			text-decoration: none;
+			color: #cb5211;
+		}
+
 		.navbar__menu__brand{
+			font-size: 1.3rem;
 			align-self: flex-start;
+			flex: 1;
 		}
 
 		.navbar__menu__item{
 			align-self: flex-end;
 		}
+
+.header{
+	padding-top: 20px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #65beb4;
+}
+
+	.header__img {
+	}
+
+	.header__img > img {
+		border-radius: 50%;
+	}
+
+	.header__title{
+		text-align: center;
+	}
+
+	.header__description{
+		margin-top: 0;
+		width: 80%;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	.header__social-media{
+		width: 80%;
+	}
+
+	.header__social-media__list{
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+	.header__social-media__list > li {
+		margin-right: 15px;
+	}
+
+	.social-media-icon{
+		width: 50px;
+	}
+
+.blog{
+	padding-top: 20px;
+	background-color: brown;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+	.blog__article{
+		width: 400px;
+		padding-right: 5px;
+		
+	}
+
+	.blog__article__link{
+		text-decoration: none;
+	}
+
+.cv{
+	padding-top: 20px;
+	background-color: olive;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+	.cv__curriculum{
+		width: 49%;
+	}
+
+	.cv__curriculum__img{
+		width: 50%;
+		margin-left:25%;
+	}
+
+	.cv__curriculum__title{
+		text-align: center;
+	}
+
+	.cv__curriculum__description{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+
+	@media screen and (max-width: 600px){
+		.cv__curriculum{
+			width: 300px;
+		}
+
+		.cv__curriculum__img{
+			content: "";
+			visibility: hidden;
+		}
+	}
+
+.contact{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: #FF6B6B;
+}
+
+	.contact__form{
+		align-self: center;
+		display: table;
+		width: 60%;
+	}
+
+	.contact__form__input{
+		display: table-row;
+		width: 100%;
+		margin-top: 10px;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 1rem;
+	}
+
+	.form__submit{
+		margin-top: 10px;
+		text-align: center;
+		width: 20%;
+		padding: 10px;
+		font-size: 1rem;
+		border-radius: 5px;
+	}
+
+.footer{
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	background-color: #f7f7f7;
+}
+
+	.footer__copyright{
+		font-size: 0.8rem;
+		align-self: flex-start;
+	}

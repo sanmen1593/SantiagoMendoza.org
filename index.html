@@ -9,31 +9,35 @@
     <nav class="navbar">
         <ul class="navbar__menu">
             <li class="navbar__menu__brand">Santiago Mendoza</li>
-            <li class="navbar__menu__item">Blog</li>
-            <li class="navbar__menu__item">CV</li>
-            <li class="navbar__menu__item">Portafolio</li>
+            <li class="navbar__menu__item"><a href="http://www.santiagomendoza.org/blog">Blog</a></li>
+            <li class="navbar__menu__item"><a href="http://www.santiagomendoza.org/cv">CV</a></li>
+            <li class="navbar__menu__item"><a href="http://www.santiagomendoza.org/portafolio">Portafolio</a></li>
         </ul>
     </nav>
     <header class="header">
-        <img src="img/profile.jpg" alt="santiago-mendoza-ramirez">
-        <h1>Santiago Mendoza Ramirez</h1>
+        <div class="header__img">
+            <img src="img/profile.jpg" alt="santiago-mendoza-ramirez">
+        </div>
+        <div class="header__title">
+            <h1>Santiago Mendoza Ramirez</h1>
+        </div>
         <p class="header__description">
-            Ingeniero de Sistemas. Desarrollador de Software y Aplicaciones web, con conocimientos
-            en Marketing Digital. Apasionado por las finanzas.
+            Ingeniero de Sistemas. Desarrollador de Software y Aplicaciones web, con conocimientos en Marketing Digital. Apasionado por las finanzas.
         </p>
         <section class="header__social-media">
             <ul class="header__social-media__list">
                 <li>
-                    <a href="http://www.twitter.com/sanmen1593">Twitter</a>
+
+                    <a href="http://www.twitter.com/sanmen1593" target="_blank"><img src="img/social/twitter.png" alt="Twitter" class="social-media-icon"></a>
                 </li>
                 <li>
-                    <a href="http://www.facebook.com/SantiagoMendozaOficial">Facebook</a>
+                    <a href="http://www.facebook.com/SantiagoMendozaOficial" target="_blank"><img src="img/social/facebook.png" alt="Facebook" class="social-media-icon"></a>
                 </li>
                 <li>
-                    <a href="http://www.github.com/sanmen1593">Github</a>
+                    <a href="http://www.github.com/sanmen1593" target="_blank"><img src="img/social/github.png" alt="Github" class="social-media-icon"></a>
                 </li>
                 <li>
-                    <a href="http://co.linkedin.com/in/santiagomendoza">LinkedIn</a>
+                    <a href="http://co.linkedin.com/in/santiagomendoza" target="_blank"><img src="img/social/linkedin.png" alt="LinkedIn" class="social-media-icon"></a>
                 </li>
             </ul>
         </section>
@@ -44,18 +48,21 @@
             <p class="blog__article__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis mollitia, praesentium magni accusamus minus obcaecati explicabo, ea tempore, aliquam molestiae pariatur saepe nam optio debitis officiis eius! Nesciunt, mollitia sint.
             </p>
+            <a class="blog__article__link" href="/">Ver entrada</a>
         </article>
         <article class="blog__article">
             <h2 class="blog__article__title">Lorem ipsum dolor</h2>
             <p class="blog__article__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis mollitia, praesentium magni accusamus minus obcaecati explicabo, ea tempore, aliquam molestiae pariatur saepe nam optio debitis officiis eius! Nesciunt, mollitia sint.
             </p>
+            <a class="blog__article__link" href="/">Ver entrada</a>
         </article>
         <article class="blog__article">
             <h2 class="blog__article__title">Lorem ipsum dolor</h2>
             <p class="blog__article__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis mollitia, praesentium magni accusamus minus obcaecati explicabo, ea tempore, aliquam molestiae pariatur saepe nam optio debitis officiis eius! Nesciunt, mollitia sint.
             </p>
+            <a class="blog__article__link" href="/">Ver entrada</a>
         </article>
     </section>
     <section class="cv">
@@ -81,15 +88,15 @@
     <section class="contact">
         <h2 class="contact__title">Contacto</h2>
         <form class="contact__form" action="">
-            <input type="text" class="form__text" placeholder="Nombre completo">
-            <input type="email" class="form__email" placeholder="email@dominio.com">
-            <input type="url" class="form__url" placeholder="http://">
-            <textarea class="form__message" placeholder="Escribe un mensaje..."></textarea>
+            <input type="text" class="form__text contact__form__input" placeholder="Nombre completo">
+            <input type="email" class="form__email contact__form__input" placeholder="email@dominio.com">
+            <input type="url" class="form__url contact__form__input" placeholder="http://">
+            <textarea class="form__message contact__form__input" placeholder="Escribe un mensaje..."></textarea>
             <input type="submit" class="form__submit btn btn--green" value="Enviar">
         </form>
     </section>
     <footer class="footer">
-        
+        <p class="footer__copyright">Santiago Mendoza Ramirez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
